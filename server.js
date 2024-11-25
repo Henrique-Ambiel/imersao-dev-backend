@@ -1,25 +1,12 @@
 import express from 'express';
-import conectarAoBanco from './src/config/dbConfig.js';
-const conexao = await conectarAoBanco(process.env.STRING_CONEXAO);
+// Importa o framework Express, que será utilizado para criar a aplicação web.
+import routes from './src/routes/postsRoutes.js';
 
-async function getTodosPosts(params) {
-    const db = conexao.db('imersao-dev');
-    const colecao = db.collection('posts');
-    return colecao.find().toArray();
-}
+const app = express();
+// Cria uma instância do Express, que será o ponto de partida da nossa aplicação.
+routes(app);
 
-app.get("/posts", async (req, res) => {
-    const posts = await getTodosPosts();
-    res.status(200).json(posts);
+app.listen(3000, () => {
+    console.log("Servidor escutando...");
 });
-
-// function buscarPosts(id){
-//     return posts.findIndex((post) => {
-//         return post.id === Number(id);
-//     })
-// };
-
-// app.get("/posts/:id", (req, res) => {
-//     const index = buscarPosts(req.params.id)
-//     res.status(200).json(posts[index]);
-// });
+// Inicia o servidor Express na porta 3000 e exibe uma mensagem no console indicando que o servidor está ouvindo.
