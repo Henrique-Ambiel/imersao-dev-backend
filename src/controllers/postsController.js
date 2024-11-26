@@ -1,4 +1,4 @@
-import getTodosPosts from '../models/modelPosts.js';
+import {getTodosPosts, criarPost} from '../models/modelPosts.js';
 
 export async function listarPosts(req, res) {
     const posts = await getTodosPosts();
@@ -11,8 +11,20 @@ export async function postarNovoPost(req, res) {
     try {
         const postCriado = await criarPost(novoPost);
         res.status(200).json(postCriado);
-    } catch (error) {
-        console.error(error.message);
-        res.status(500).json('Erro: falha na requisição...');
+    } catch (erro) {
+        console.error(erro.message);
+        res.status(500).json({'Erro': 'Falha na requisição...'})
+    }
+}
+
+export async function uploadImagem(req, res) {
+    const novoPost = req.body;
+
+    try {
+        const postCriado = await criarPost(novoPost);
+        res.status(200).json(postCriado);
+    } catch (erro) {
+        console.error(erro.message);
+        res.status(500).json({'Erro': 'Falha na requisição...'})
     }
 }
