@@ -1,9 +1,18 @@
-import getTodosPosts from "../models/modelPosts.js";
+import getTodosPosts from '../models/modelPosts.js';
 
 export async function listarPosts(req, res) {
-    // Define uma rota GET para a URL '/posts'.
     const posts = await getTodosPosts();
-    // Chama a função `getTodosPosts` para obter todos os posts e armazena o resultado na variável `posts`.
     res.status(200).json(posts);
-    // Envia uma resposta HTTP com status 200 (OK) e o array de posts no formato JSON.
 } 
+
+export async function postarNovoPost(req, res) {
+    const novoPost = req.body;
+
+    try {
+        const postCriado = await criarPost(novoPost);
+        res.status(200).json(postCriado);
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).json('Erro: falha na requisição...');
+    }
+}
