@@ -14,15 +14,22 @@ O projeto aborda os seguintes conceitos:
 O objetivo é acessar fotos armazenadas em um banco de dados e apresentá-las em uma aplicação web front-end fornecida pela Alura, com descrições geradas automaticamente pelo Google Gemini.
 
 💻 Tecnologias Utilizadas
-Linguagem: JavaScript (Node.js)
-Banco de Dados: MongoDB
-API: Integração com Google Gemini
-Front-end: Aplicação fornecida pela Alura
+
+- Linguagem: JavaScript (Node.js)
+  
+- Banco de Dados: MongoDB
+
+- API: Integração com Google Gemini
+  
+- Front-end: Aplicação fornecida pela Alura
 
 📁 Estrutura do Repositório
-/src: Contém o código backend, incluindo os endpoints da API e lógica de integração com o banco de dados e Google Gemini.
-/public: Arquivos relacionados à aplicação front-end da Alura.
-Documentação e exemplos de uso.
+
+- /src: Contém o código backend, incluindo os endpoints da API e lógica de integração com o banco de dados e Google Gemini.
+  
+- /public: Arquivos relacionados à aplicação front-end da Alura.
+  
+- Documentação e exemplos de uso.
 
 🚀 Como Utilizar
 Faça o clone do repositório:
