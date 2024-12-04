@@ -1,4 +1,5 @@
 Projeto Imersão Dev - Node.js e Google Gemini 🌐📸
+
 Este repositório contém o projeto desenvolvido durante a Imersão Dev da Alura, onde explorei os fundamentos do desenvolvimento backend, utilizando Node.js e integração com APIs.
 
 📋 Conteúdo do Projeto
