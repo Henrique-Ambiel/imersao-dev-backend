@@ -33,18 +33,19 @@ O objetivo é acessar fotos armazenadas em um banco de dados e apresentá-las em
 
 🚀 Como Utilizar
 Faça o clone do repositório:
-bash
-Copiar código
-git clone https://github.com/seu-usuario/seu-repositorio.git  
+
+- git clone https://github.com/seu-usuario/seu-repositorio.git
+  
 Instale as dependências:
-bash
-Copiar código
-npm install  
+
+- npm install
+  
 Configure as variáveis de ambiente para conexão com o banco de dados e Google Gemini.
+
 Inicie o servidor:
-bash
-Copiar código
-npm start
+
+- npm start
 
 🎯 Objetivo
+
 Este repositório foi criado para fins educativos, visando aprimorar a compreensão de desenvolvimento backend e integração de APIs com tecnologias modernas.
