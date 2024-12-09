@@ -32,6 +32,7 @@ O objetivo é acessar fotos armazenadas em um banco de dados e apresentá-las em
 - Documentação e exemplos de uso.
 
 🚀 Como Utilizar
+
 Faça o clone do repositório:
 
 - git clone https://github.com/seu-usuario/seu-repositorio.git
