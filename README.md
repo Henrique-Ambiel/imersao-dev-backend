@@ -35,7 +35,7 @@ O objetivo é acessar fotos armazenadas em um banco de dados e apresentá-las em
 
 Faça o clone do repositório:
 
-- git clone https://github.com/seu-usuario/seu-repositorio.git
+- git clone https://github.com/Henrique-Ambiel/imersao-dev-backend.git
   
 Instale as dependências:
 
