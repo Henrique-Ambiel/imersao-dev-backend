@@ -23,30 +23,6 @@ O objetivo é acessar fotos armazenadas em um banco de dados e apresentá-las em
   
 - Front-end: Aplicação fornecida pela Alura
 
-## 📁 Estrutura do Repositório
-
-- /src: Contém o código backend, incluindo os endpoints da API e lógica de integração com o banco de dados e Google Gemini.
-  
-- /public: Arquivos relacionados à aplicação front-end da Alura.
-  
-- Documentação e exemplos de uso.
-
-## 🚀 Como Utilizar
-
-Faça o clone do repositório:
-
-- git clone https://github.com/Henrique-Ambiel/imersao-dev-backend.git
-  
-Instale as dependências:
-
-- npm install
-  
-Configure as variáveis de ambiente para conexão com o banco de dados e Google Gemini.
-
-Inicie o servidor:
-
-- npm start
-
 ## 🎯 Objetivo
 
 Este repositório foi criado para fins educativos, visando aprimorar a compreensão de desenvolvimento backend e integração de APIs com tecnologias modernas.
